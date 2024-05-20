@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: Corben, sans-serif;
+    text-align: center;
+    color: #044A7F;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: 'roboto', serif;
+    font-weight: 407000;
+    color: #044A7F;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    background-color: #044A7F;
+    max-width: 100%;
+}
+
+.logo img {
+    max-height: 50px; /* Tamaño máximo del logo */
+    padding-top: 8px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f1b4a8;
+    font-family: 'roboto', serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+/* Estilos para el header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #044A7F;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  /* Estilos para el logo */
+  .logo img {
+    max-height: 40px;
+  }
+  
+  /* Estilos para el menú de navegación */
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-left: 30px;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #007bff;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .logo {
+      margin-bottom: 20px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav li {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
+/* Estilos para el main */
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  /* Estilos para el contenedor de la imagen */
+  .image-container {
+    position: relative;
+    text-align: center;
+  }
+  
+  .image-container img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Estilos para los textos sobre la imagen */
+  .image-text1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #044A7F;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .image-text2 {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color:  #044A7F;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Estilos para el botón */
+  .boton {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color:#044A7F;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .boton:hover {
+    background-color:#044A7F;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .image-text1 {
+      font-size: 24px;
+    }
+    
+    .image-text2 {
+      font-size: 16px;
+    }
+    
+    .boton {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
+/*main  Section 2:*/
+
+.productos-destacados {
+    padding: 20px;
+}
+
+.galeria-productos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.producto {
+    text-align: center;
+    color: #044A7F;
+    font-family: 'roboto', serif;
+    font-weight: 700;
+}
+
+.producto img {
+    max-width: 80%;
+    height: auto;
+}
+
+
+/*main  Section 2:*/
+
+
+.seccion-suscripcion {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 50px 20px;
+  }
+  
+  .mitad-izquierda {
+    width: 50%;
+    padding-right: 40px;
+  }
+  
+  .mitad-izquierda img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .mitad-derecha {
+    width: 50%;
+  }
+  
+  .mitad-derecha h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .container div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .container input[type="text"],
+  .container input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .container input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .container input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.contenido-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido-footer p {
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/*Suscripción*/
+.seccion-suscripcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 50px 0;
+  }
+  
+  .mitad-izquierda {
+    width: 50%;
+    padding-right: 50px;
+  }
+  
+  .mitad-izquierda img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+  
+  .mitad-derecha {
+    width: 50%;
+    padding-left: 50px;
+  }
+  
+  .mitad-derecha h3 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .container > div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .container input[type="text"],
+  .container input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .container input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .container input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  
