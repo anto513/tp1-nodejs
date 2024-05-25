@@ -5,54 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/validaciones.js"></script>
     <title>Sobre la marca</title>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="../html/index.html"><img src="../images/tu_logo.png" alt="Logo de Maravillosa"></img></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../html/index.html">Inicio</a></li>
-                <li><a href="../html/productos.html">Productos</a></li>
-                <li><a href="../html/sobrelamarca.html">Sobre la marca</a></li>
-                <li><a href="../html/contacto.html">Contacto</a></li>
-            </ul>
+    <header id="header">
+        <nav class="menu">
+            <div class="logo">
+                <a href="../html/index.html"><img src="../images/logo-maravillosa.png" alt="Logo de Maravillosa"></a>
+                <a class="btn-menu" id="btn-menu"><i class="icono fa fa-bars fa-2x" aria-hidden="true"></i></a>
+            </div>
+            <div class="enlaces" id="enlaces">
+                <ul>
+                    <li><a href="../html/index.html">Inicio</a></li>
+                    <li><a href="../html/productos.html">Productos</a></li>
+                    <li><a href="../html/sobrelamarca.html">Sobre la marca</a></li>
+                    <li><a href="../html/contacto.html">Contacto</a></li>
+                    <li><a><img src="../images/search.svg" alt="botón buscador"></a></li>
+                    <li><a><img src="../images/user.svg" alt="botón de acceso de usuario"></a></li>
+                    <li><a><img src="../images/cart3.svg" alt="botón para llenar el carrito"></a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <div class="img-izquierda">
-        <img src="../images/cara-de-mujer-caricatura.jpg" alt="Foto de la emprendedora">
-    </div>
-
-    <div class="mitad-derecha">
-        <div class="seccion-marca">
-            <p>En Maravillosa, fusionamos de la riqueza cultural oriental, especialmente la japonesa, con la creatividad
-                artesanal para ofrecer objetos funcionales y decorativos únicos.</p>
-        </div>
-        <div class="seccion-marca">
-            <h2>Nuestra misión</h2>
-            <p>es ser portadores de belleza y autenticidad, creando piezas que no solo adornan espacios, sino que
-                también
-                cuentan historias, conectando emocionalmente con nuestros clientes a través de sus gustos particulares.
-            </p>
-        </div>
-        <div class="seccion-marca">
-            <h2>Nuestra visión</h2>
-            <p>es ser líderes en la creación de experiencias significativas y durareras, donde cada producto es una
-                expresión de aprecio y conexión cultural.</p>
-        </div>
-    </div>
+    <main class="fondo-marca">
+        <section class="seccion-marca">
+            <div class="img-izquierda">
+                <img class="img-circular" src="../images/objetos.jpeg" alt="Foto de un lapicero, llavero y kusudama">
+            </div>
+            <div class="texto-marca">
+                <p>En Maravillosa, fusionamos de la riqueza cultural oriental, especialmente la japonesa,
+                    con la creatividad artesanal para ofrecer objetos funcionales y decorativos únicos.</p>
+                <h2>Nuestra misión: </h2>
+                <p>Es ser portadores de belleza y autenticidad, creando piezas que no solo adornan espacios,
+                    sino que también cuentan historias, conectando emocionalmente con nuestros clientes a través de sus
+                    gustos particulares.
+                </p>
+                <h2>Nuestra visión:</h2>
+                <p>Es ser líderes en la creación de experiencias significativas y durareras,
+                    donde cada producto es una expresión de aprecio y conexión cultural.</p>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="contenido-footer">
             <p>&copy; 2024 Maravillosa. Todos los derechos reservados.</p>
-            <p>Sitio desarrollado por Alejandro Toloza y Antonela Testa.</p>
+            <p>Sitio desarrollado por <a class="red-linkedin" href="https://www.linkedin.com/in/antonela-testa/"
+                    target="_blank">Antonela Testa</a>.</p>
             <nav>
-                <a href="#">Política de privacidad</a> |
-                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a>
             </nav>
         </div>
     </footer>

@@ -1,3 +1,4 @@
+/* ---------- COMIENZO Sección contacto ----------- */
 const form = document.getElementById('contactForm');
 
 form.addEventListener('submit', (event) => {
@@ -74,3 +75,4 @@ function isValidEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
 }
+/* ---------- FIN Sección contacto ----------- */

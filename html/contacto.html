@@ -1,26 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/validaciones.js"></script>
     <title>Contacto</title>
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <a href="../html/index.html"><img src="../images/tu_logo.png" alt="Logo de Maravillosa"></img></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../html/index.html">Inicio</a></li>
-                <li><a href="../html/productos.html">Productos</a></li>
-                <li><a href="../html/sobrelamarca.html">Sobre la marca</a></li>
-                <li><a href="../html/contacto.html">Contacto</a></li>
-            </ul>
+    <header id="header">
+        <nav class="menu">
+            <div class="logo">
+                <a href="../html/index.html"><img src="../images/logo-maravillosa.png" alt="Logo de Maravillosa"></a>
+                <a class="btn-menu" id="btn-menu"><i class="icono fa fa-bars fa-2x" aria-hidden="true"></i></a>
+            </div>
+            <div class="enlaces" id="enlaces">
+                <ul>
+                    <li><a href="../html/index.html">Inicio</a></li>
+                    <li><a href="../html/productos.html">Productos</a></li>
+                    <li><a href="../html/sobrelamarca.html">Sobre la marca</a></li>
+                    <li><a href="../html/contacto.html">Contacto</a></li>
+                    <li><a><img src="../images/search.svg" alt="botón buscador"></a></li>
+                    <li><a><img src="../images/user.svg" alt="botón de acceso de usuario"></a></li>
+                    <li><a><img src="../images/cart3.svg" alt="botón para llenar el carrito"></a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <h2>Contacto</h2>
+
+    <div class="container-contacto">
+        <h1>Contactanos</h1>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label>Me quiero suscribir a:</label>
+                <div class="radio-group">
+                    <label for="promo">
+                        <input type="checkbox" id="promo" name="suscripciones" value="promo">
+                        Promociones
+                    </label>
+                    <label for="nuevos">
+                        <input type="checkbox" id="nuevos" name="suscripciones" value="nuevos">
+                        Novedades y promociones
+                    </label>
+                    <label for="coleccion">
+                        <input type="checkbox" id="coleccion" name="suscripciones" value="coleccion">
+                        Colecciones cápsula
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="provincia">¿De dónde sos?</label>
+                <select id="provincia" name="provincia" required>
+                    <option value="">Seleccioná tu Provincia</option>
+                    <option value="buenos aires">Buenos Aires</option>
+                    <option value="catamarca">Catamarca</option>
+                    <option value="chaco">Chaco</option>
+                    <option value="chubut">Chubut</option>
+                    <option value="córdoba">Córdoba</option>
+                    <option value="corrientes">Corrientes</option>
+                    <option value="entre ríos">Entre Ríos</option>
+                    <option value="formosa">Formosa</option>
+                    <option value="jujuy">Jujuy</option>
+                    <option value="la pampa">La Pampa</option>
+                    <option value="la rioja">La Rioja</option>
+                    <option value="mendoza">Mendoza</option>
+                    <option value="misiones">Misiones</option>
+                    <option value="neuquén">Neuquén</option>
+                    <option value="río negro">Río Negro</option>
+                    <option value="salta">Salta</option>
+                    <option value="san juan">San Juan</option>
+                    <option value="san luis">San Luis</option>
+                    <option value="santa cruz">Santa Cruz</option>
+                    <option value="santa fe">Santa Fe</option>
+                    <option value="santiago del estero">Santiago del Estero</option>
+                    <option value="tierra del fuego">Tierra del Fuego</option>
+                    <option value="tucuman">Tucumán</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="image">Imagenes:</label>
+                <div class="image-upload">
+                    <label for="image-input">
+                        <i class="upload-icon"></i>
+                        Selecciona una imagen
+                    </label>
+                    <input type="file" id="image-input" name="image" accept="image/*" required>
+                </div>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
 
     <footer>
         <div class="contenido-footer">
@@ -33,4 +112,5 @@
         </div>
     </footer>
 </body>
+
 </html>

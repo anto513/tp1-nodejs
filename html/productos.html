@@ -1,79 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/productos.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/validaciones.js"></script>
     <title>Productos</title>
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <a href="../html/index.html"><img src="../images/tu_logo.png" alt="Logo de Maravillosa"></img></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../html/index.html">Inicio</a></li>
-                <li><a href="../html/productos.html">Productos</a></li>
-                <li><a href="../html/sobrelamarca.html">Sobre la marca</a></li>
-                <li><a href="../html/contacto.html">Contacto</a></li>
-            </ul>
+    <header id="header">
+        <nav class="menu">
+            <div class="logo">
+                <a href="../html/index.html"><img src="../images/logo-maravillosa.png" alt="Logo de Maravillosa"></a>
+                <a class="btn-menu" id="btn-menu"><i class="icono fa fa-bars fa-2x" aria-hidden="true"></i></a>
+            </div>
+            <div class="enlaces" id="enlaces">
+                <ul>
+                    <li><a href="../html/index.html">Inicio</a></li>
+                    <li><a href="../html/productos.html">Productos</a></li>
+                    <li><a href="../html/sobrelamarca.html">Sobre la marca</a></li>
+                    <li><a href="../html/contacto.html">Contacto</a></li>
+                    <li><a><img src="../images/search.svg" alt="botón buscador"></a></li>
+                    <li><a><img src="../images/user.svg" alt="botón de acceso de usuario"></a></li>
+                    <li><a><img src="../images/cart3.svg" alt="botón para llenar el carrito"></a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <div class="container">
-    <!-- Resto del código de los productos -->
+    <div class="container-productos">
+        <div class="product">
+            <img src="../images/amuleto.jpg" alt="Pulsera">
+            <h3>Amuleto kusudama</h3>
+            <p>Kusudama colgante que sirve como amuleto de protección contra enfermedades o malas energías.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="../images/grulla.jpg" alt="Grulla">
+            <h3>Llavero grulla</h3>
+            <p>Llavero textil protejido contra la humedad, por su tamaño y flexibilidad es fácil de encontrar dentro de
+                tu bolso.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="../images/lapicero.jpg" alt="Lapicero">
+            <h3>Lapicero geométrico</h3>
+            <p>Lapicero hecho con cartón y forrado en papel, un delicado y vistoso elemento para usar como contenedor de
+                lapices o herramientas.</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="product">
+            <img src="../images/tarjeta.jpg" alt="Tarjeta">
+            <h3>Tarjeta grulla</h3>
+            <p>Una tarjeta que embellece tus regalos, tiene un cuadrado de papel blanco para que puedas escribir un
+                mensaje totalmente personalizado.</p>
+            <button>Comprar</button>
+        </div>
     </div>
-
-    <div class="container">
-        <div class="product">
-            <img src="/images/amuleto.jpg" alt="Pulsera">
-            <h3>Pulsera Dorada</h3>
-            <p>Elegante pulsera de metal dorado.</p>
-            <button>Comprar</button>
-        </div>
-        
-        <div class="product">
-            <img src="/images/grulla.jpg" alt="Grulla">
-            <h3>Collar de Perlas</h3>
-            <p>Hermoso collar con perlas cultivadas.</p>
-            <button>Comprar</button>
-        </div>
-        
-        <div class="product">
-            <img src="/images/lapicero.jpg" alt="Lapicero">
-            <h3>Aretes de Plata</h3>
-            <p>Modernos aretes de plata con diseño elegante.</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="product">
-            <img src="/images/tarjeta.jpg" alt="Tarjeta">
-            <h3>Aretes de Plata</h3>
-            <p>Modernos aretes de plata con diseño elegante.</p>
-            <button>Comprar</button>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../html/index.html">Inicio</a></li>
-                <li><a href="../html/sobrelamarca.html">Sobre la marca</a></li>
-                <li><a href="../html/productos.html">Productos</a></li>
-                <li><a href="../html/cursos.html">Cursos</a></li>
-                <li><a href="../html/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <h2>Productos</h2>
 
     <footer>
         <div class="contenido-footer">
             <p>&copy; 2024 Maravillosa. Todos los derechos reservados.</p>
-            <p>Sitio desarrollado por Alejandro Toloza y Antonela Testa.</p>
+            <p>Sitio desarrollado por <a class="red-linkedin" href="https://www.linkedin.com/in/antonela-testa/"
+                    target="_blank">Antonela Testa</a>.</p>
             <nav>
-                <a href="#">Política de privacidad</a> |
-                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a>
             </nav>
         </div>
     </footer>
 </body>
+
 </html>
