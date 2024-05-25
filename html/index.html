@@ -5,35 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../js/validaciones.js">
     <title>Maravillosa</title>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="../html/index.html"><img src="../images/tu_logo.png" alt="Logo de Maravillosa"></img></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../html/index.html">Inicio</a></li>
-                <li><a href="../html/productos.html">Productos</a></li>
-                <li><a href="../html/sobrelamarca.html">Sobre la marca</a></li>
-                <li><a href="../html/contacto.html">Contacto</a></li>
-            </ul>
+    <header id="header">
+        <nav class="menu">
+            <div class="logo">
+                <a href="../html/index.html"><img src="../images/logo-maravillosa.png" alt="Logo de Maravillosa"></a>
+                <a class="btn-menu" id="btn-menu"><i class="icono fa fa-bars fa-2x" aria-hidden="true"></i></a>
+            </div>
+            <div class="enlaces" id="enlaces">
+                <ul>
+                    <li><a href="../html/index.html">Inicio</a></li>
+                    <li><a href="../html/productos.html">Productos</a></li>
+                    <li><a href="../html/sobrelamarca.html">Sobre la marca</a></li>
+                    <li><a href="../html/contacto.html">Contacto</a></li>
+                    <li><a><img src="../images/search.svg" alt="botón buscador"></a></li>
+                    <li><a><img src="../images/user.svg" alt="botón de acceso de usuario"></a></li>
+                    <li><a><img src="../images/cart3.svg" alt="botón para llenar el carrito"></a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main>
         <div class="image-container">
-            <img src="../images/principal.jpg" alt="origami">
+            <img class="portada-principal" src="../images/principal.jpg" alt="portada principal">
             <div class="image-text1">
-                <h1>MARAVILLOSA</h1>
-                <h2>Estilo creativo</h2>
+                <img src="../images/logo-bajada-maravillosa.svg" alt="Maravillosa estilo creativo"></img>
             </div>
             <div class="image-text2">
-                </p> Artesanias inspiradas por la música, cines, series y la cultura japonesa</p>
+                </p> Artesanías inspiradas por la música, cine, series y la cultura japonesa</p>
             </div>
-            <button class="boton"><a href="../html/productos.html">Ir a la tienda</a></button>
+            <a href="../html/productos.html"><button class="boton-tienda">Ir a la tienda</button></a>
         </div>
 
         <section class="productos-destacados">
@@ -60,39 +66,36 @@
 
         <section class="seccion-suscripcion">
             <div class="mitad-izquierda">
-                <img src="../images/maravillosa.png" alt="Descripción de la imagen">
+                <img src="../images/maravillosa.png" alt="imagen de una grulla con el logo de maravillosa">
             </div>
             <div class="mitad-derecha">
-                <h3>Suscripción</h3>
+                <h3>Suscribite para recibir promos y novedades</h3>
                 <form>
                     <div class="container">
                         <div><!-- col -->
                             <label for="">Nombre</label>
-                            <input type="text" name="nombre" id="">
-                        </div>
+                            <input type="text" name="nombre" placeholder="Tu nombre" id="">
+                        </div><br>
                         <div><!-- col -->
-                            <label for="">Apellido</label>
-                            <input type="text" name="nombre" id="">
+                            <label for="">Email</label>
+                            <input type="email" name="email" placeholder="Tu email" id="">
+                        </div><br>
+                        <div><!-- col -->
+                            <input type="submit" value="Enviar">
                         </div>
-                        <label for="">Email</label>
-                        <input type="email" name="nombre" id="">
-                        <input type="submit" value="Enviar">
                     </div>
                 </form>
             </div>
         </section>
     </main>
 
-    </div>
-
-
     <footer>
         <div class="contenido-footer">
             <p>&copy; 2024 Maravillosa. Todos los derechos reservados.</p>
-            <p>Sitio desarrollado por Alejandro Toloza y Antonela Testa.</p>
+            <p>Sitio desarrollado por <a class="red-linkedin" href="https://www.linkedin.com/in/antonela-testa/"
+                    target="_blank">Antonela Testa</a>.</p>
             <nav>
-                <a href="#">Política de privacidad</a> |
-                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a>
             </nav>
         </div>
     </footer>
