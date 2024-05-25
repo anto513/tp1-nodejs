@@ -35,11 +35,11 @@
         <form id="contactForm">
             <div class="form-group">
                 <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" placeholder="Escribí tu nombre" required>
             </div>
             <div class="form-group">
                 <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="Escribí tu email" required>
             </div>
             <div class="form-group">
                 <label>Me quiero suscribir a:</label>
@@ -88,26 +88,20 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="image">Imagenes:</label>
-                <div class="image-upload">
-                    <label for="image-input">
-                        <i class="upload-icon"></i>
-                        Selecciona una imagen
-                    </label>
-                    <input type="file" id="image-input" name="image" accept="image/*" required>
-                </div>
+                <label for="mensaje">Mensaje:</label>
+                    <input type="text" id="mensaje" name="mensaje" placeholder="Escribí tu mensaje acá" required>
             </div>
-            <button type="submit">Enviar</button>
+            <input type="submit" value="Enviar">
         </form>
     </div>
 
     <footer>
         <div class="contenido-footer">
             <p>&copy; 2024 Maravillosa. Todos los derechos reservados.</p>
-            <p>Sitio desarrollado por Alejandro Toloza y Antonela Testa.</p>
+            <p>Sitio desarrollado por <a class="red-linkedin" href="https://www.linkedin.com/in/antonela-testa/"
+                    target="_blank">Antonela Testa</a>.</p>
             <nav>
-                <a href="#">Política de privacidad</a> |
-                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a>
             </nav>
         </div>
     </footer>
